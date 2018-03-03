@@ -1,0 +1,17 @@
+name: kt - keep trying
+version: "1.0"
+author: Jarrod Swart <jcswart@gmail.com>
+about: Run a program in several threads keeping the output from the first to complete.
+settings:
+  - TrailingVarArg
+args:
+  - tries:
+      short: t
+      long: tries
+      value_name: NUM_TRIES
+      help: The number of sub threads to spawn.
+      takes_value: true
+  - program:
+      multiple: true
+      help: The progam to run. Additional arguments are passed along.
+

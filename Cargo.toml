@@ -1,0 +1,12 @@
+[package]
+name = "kt"
+version = "0.1.0"
+authors = ["Jarrod Swart <jcswart@gmail.com>"]
+
+[dependencies]
+futures = "*"
+tokio-core = "*"
+tokio-process = "0.1.5"
+clap = {version = "2.30", features = ["yaml"]}
+
+
